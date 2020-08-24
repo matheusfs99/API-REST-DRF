@@ -6,7 +6,7 @@ class AvaliacaoSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             'email': {'write_only': True}
         }
-        models = Avaliacao
+        model = Avaliacao
         fields = (
             'id',
             'curso',
